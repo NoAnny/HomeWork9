@@ -3,15 +3,15 @@
 M = 1; N = 15 -> 120
 M = 4; N = 8. -> 30*/
 
+Main();
+
+void Main()
+{
     Console.WriteLine($"Введите число М");
     int m = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine($"Введите число N");
     int n = Convert.ToInt32(Console.ReadLine());
     int sum = 0;
-    Main();
-
-void Main()
-{
     if (SumNumber(m, n, sum) < 0)
     {
         Console.WriteLine($"N должно быть больше M");
